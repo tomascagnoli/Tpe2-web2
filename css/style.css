@@ -1,0 +1,232 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(4, 67, 255);
+  }
+  
+  h1 {
+    margin-left: 625px;
+    font-size: 36px;
+    color: #000;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    padding: 10px;
+    border: 2px solid #a6a6a6;
+    border-radius: 5px;
+    width: 15%;
+  }
+  
+  #btn-login {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #paises{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 190px;
+    margin-top: px;
+    font-weight:bold
+  }
+  li{
+    list-style: none;
+    font-size: larger;
+  }
+  ul{
+    display: flex;
+    margin-right: 450px;
+  }
+  table{
+    background-color: #fffefe;
+    color: rgb(0, 0, 0);
+    width: 40%;
+    position: relative;
+    top: 20px;
+    right: 40px;
+    
+  }
+  #containerLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  
+  #paises, #artistasContainer, #albumesContainer {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  #paises {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid #414141;
+    height: 45px;
+  }
+  .artistas-container{
+    display: flex;
+    margin-left: 580px;
+  }
+  h2{
+    margin-left: 610px;
+    color: white;
+  }
+
+  td{
+    text-align: center;
+  }
+  th,td{
+    border: solid 2px black;
+  }
+  td.artistas{
+    margin-left: 325px;
+    padding:15px;
+  }
+  
+  #artistasContainer {
+    background-color: rgb(6, 67, 250);
+  }
+  
+  .tableAlbumes{
+    position: relative;
+    left: 450px;
+  }
+  
+  .paises, .artistas, .albumes {
+    padding: 10px;
+  }
+  
+  .paises:hover, .albumes:hover {
+    background-color: #e6e6e6;
+    border-radius: 20px;
+  }
+  .artistas:hover{
+    color: #222222 ;
+  }
+  a:hover{
+    color: rgb(6, 67, 250);
+  }
+  
+  .login form{
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .login h2{
+    position: relative;
+    margin-top: 150px;
+    left: 25px;
+  }
+  .login a{
+    position: relative;
+    bottom: 52px;
+    left: 25px;
+  }
+  .homeAdmins a{
+    position: relative;
+    bottom: 50px;
+    left: 15px;
+    margin: 10px;
+  }
+  .homeAdmins h2{
+    position: relative;
+    right: 150px;
+    font-size: xx-large;
+    font-weight: 300;
+  }
+  .homeAdmins #addartista{
+    display: flex;
+    margin-left: 200px;
+    width: 90%;
+  }
+  .homeAdmins #addartista h3{
+    margin-left: 40px;
+    margin-top: 50px;
+    color: white;
+  }
+  .homeAdmins #updateartista{
+    margin-left: 450px;
+    align-items: center;
+    margin-right: 450px;
+    position: relative;
+    bottom: 275px;
+   
+  }
+  .homeAdmins #updateartista input{
+    width: 30%;
+   
+  }
+  .homeAdmins #updateartista h3{
+    color: white;
+  }
+  .homeAdmins #deleteartista{
+    margin-left: 1050px;
+    position: relative;
+    bottom: 617px;
+    width: 80%;
+  }
+  .homeAdmins #deleteartista h3{
+    color: white;
+    position: relative;
+    left: 20px;
+  }
+  .homeAdmins #deleteartista #submitdelete{
+    position: relative;
+    bottom: 20px;
+    left: 11px;
+  }
+  .homeAdmins #addalbum{
+    position: relative;
+    bottom: 400px;
+    margin-left: 200px;
+    
+  }
+  .homeAdmins #addalbum h3{
+    color: white;
+    margin-left: 30px;
+  }
+  .homeAdmins #updatealbum{
+    position: relative;
+    left: 625px;
+    bottom: 743px;
+  }
+  .homeAdmins #updatealbum h3{
+    color: white;
+    position: relative;
+    right: 35px;
+  }
+  .homeAdmins #deletealbum{
+    position: relative;
+    left: 1050px;
+    bottom: 1085px;
+  }
+  .homeAdmins #deletealbum h3{
+    color: white;
+    margin-left: 40px;
+  }
+  .homeAdmins #deletealbum #submitdelete{
+    margin-left: 25px;
+  }
+
+  
+
+
