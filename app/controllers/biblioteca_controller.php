@@ -166,16 +166,16 @@
             if($orden=='modificar'){
                 session_start();
                 if($_SESSION['logueado']){
-                    header("Location: /web2/tpeWeb2/homeAdmins");
+                    header("Location: /web2/Tpe2-web2/homeAdmins");
                     die();
                 }else{
-                    header("Location: /web2/tpeWeb2/form");
+                    header("Location: /web2/Tpe2-web2/form");
                     die();
                 }
             }elseif($orden=='cerrar'){
                 session_start();
                 session_destroy();
-                header("Location: /web2/tpeWeb2/home");
+                header("Location: /web2/Tpe2-web2/home");
                 die();
             }else{
                 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -183,11 +183,11 @@
                         $usuario = $_REQUEST['usuario'];
                         $password = $_REQUEST['password'];
                         $registro = $this->model->getRegistro($usuario);
-                        if (password_verify($password, ($registro->password))) {
+                        if ($registro && password_verify($password, ($registro->password))) {
                             session_start();
                             $_SESSION['usuario'] = $usuario;
                             $_SESSION['logueado'] = true;
-                            header("Location: /web2/tpeWeb2/homeAdmins");
+                            header("Location: /web2/Tpe2-web2/homeAdmins");
                             die();
                         } else {
                             $this->view->showError(' Usuario o contraseña incorrectos');

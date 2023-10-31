@@ -1,6 +1,5 @@
 
-<h2> Artistas de {$pais} </h2>
-<div class="artistas-container">
+    <h2> Artistas de {$pais} </h2>
     <table>
     <thead><tr><th>Id de artista</th><th>Artista</th><th>Cantidad de Álbumes</th></tr></thead>
     <tbody>
@@ -15,4 +14,3 @@
     
     </tbody>
     </table>
-</div>
